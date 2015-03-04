@@ -34,6 +34,7 @@ $german_array = array(
 		7	=> 'Vampir',
 		8	=> 'Barde',
 		9	=> 'Seelensammler',
+		10	=> 'Höllenpeiniger',
 	),
 
 	'races' => array(
@@ -44,6 +45,7 @@ $german_array = array(
 		4	=> 'Kindred',
 		5	=> 'Steinmensch',
 		6	=> 'Lykaner',
+		7	=> 'Dämone',
 	),
 	'roles' => array(
 		1	=> 'Heiler',

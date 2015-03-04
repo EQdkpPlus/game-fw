@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('fw')) {
 	class fw extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '1.1.0';
+		public $version				= '1.1.1';
 		protected $this_game		= 'fw';
 		protected $types			= array('classes', 'races', 'filters', 'roles');
 		protected $classes			= array();
@@ -61,6 +61,7 @@ if(!class_exists('fw')) {
 						4 	=> 'all',		// Kindred
 						5 	=> 'all',		// Stoneman
 						6 	=> 'all',		// Lycan
+						7 	=> array(10),	// Demon
 					),
 				),
 			),

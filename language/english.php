@@ -34,6 +34,7 @@ $english_array =  array(
 		7	=> 'Vampire',
 		8	=> 'Bard',
 		9	=> 'Soul Reaper',
+		10	=> 'Tormentor',
 	),
 
 	'races' => array(
@@ -44,6 +45,7 @@ $english_array =  array(
 		4	=> 'Kindred',
 		5	=> 'Stoneman',
 		6	=> 'Lycan',
+		7	=> 'Demon',
 	),
 	'roles' => array(
 		1	=> 'Healer',
