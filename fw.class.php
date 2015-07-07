@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('fw')) {
 	class fw extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '1.1.2';
+		public $version				= '1.1.3';
 		protected $this_game		= 'fw';
 		protected $types			= array('classes', 'races', 'filters', 'roles');
 		protected $classes			= array();
@@ -127,6 +127,51 @@ if(!class_exists('fw')) {
 		}
 
 		public function install($install=false){}
+		
+		//Guildbank
+		public function guildbank_money(){
+		return 	$money_data = array(
+		'diamond'		=> array(
+			'icon'			=> array(
+				'type'		=> 'icon',
+				'name'		=> 'diamond',
+			),
+			'factor'		=> 1000000,
+			'size'			=> 'unlimited',
+			'language'		=> $this->user->lang(array('gb_currency', 'diamond')),
+			'short_lang'	=> $this->user->lang(array('gb_currency', 'diamond_s')),
+		),
+		'gold'		=> array(
+			'icon'			=> array(
+				'type'		=> 'default',
+				'name'		=> 'gold'
+			),
+			'factor'		=> 10000,
+			'size'			=> 2,
+			'language'		=> $this->user->lang(array('gb_currency', 'gold')),
+			'short_lang'	=> $this->user->lang(array('gb_currency', 'gold_s')),
+		),
+		'silver'	=> array(
+			'icon'			=> array(
+				'type'		=> 'default',
+				'name'		=> 'silver'
+			),
+			'factor'		=> 100,
+			'size'			=> 2,
+			'language'		=> $this->user->lang(array('gb_currency', 'silver')),
+			'short_lang'	=> $this->user->lang(array('gb_currency', 'silver_s')),
+		),
+		'copper'	=> array(
+			'icon'			=> array(
+				'type'		=> 'default',
+				'name'		=> 'bronze'
+			),
+			'factor'		=> 1,
+			'size'			=> 2,
+			'language'		=> $this->user->lang(array('gb_currency', 'copper')),
+			'short_lang'	=> $this->user->lang(array('gb_currency', 'copper_s')),
+		)
+		);}
 	}
 }
 ?>
