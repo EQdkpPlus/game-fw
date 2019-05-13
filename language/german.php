@@ -35,6 +35,9 @@ $german_array = array(
 		8	=> 'Barde',
 		9	=> 'Seelensammler',
 		10	=> 'Höllenpeiniger',
+		11	=> 'Waldläufer',
+		12	=> 'Wächter',
+		13	=> 'Drachenkrieger',
 	),
 
 	'races' => array(

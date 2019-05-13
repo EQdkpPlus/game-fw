@@ -26,14 +26,14 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('fw')) {
 	class fw extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '1.1.3';
+		public $version				= '1.1.4';
 		protected $this_game		= 'fw';
 		protected $types			= array('classes', 'races', 'filters', 'roles');
 		protected $classes			= array();
 		protected $races			= array();
 		protected $roles			= array();
 		protected $filters			= array();
-		public $langs				= array('english', 'german');
+		public $langs				= array('english', 'german', 'french');
 
 		protected $class_dependencies = array(
 			array(
@@ -54,24 +54,24 @@ if(!class_exists('fw')) {
 				'recruitment' => true,
 				'parent'	=> array(
 					'race' => array(
-						0 	=> 'all',		// Unknown
-						1 	=> 'all',		// Dwarf
-						2 	=> 'all',		// Elf
-						3 	=> 'all',		// Human
-						4 	=> 'all',		// Kindred
-						5 	=> 'all',		// Stoneman
-						6 	=> 'all',		// Lycan
-						7 	=> array(10),	// Demon
+						0 	=> 'all',					// Unknown
+						1 	=> array(4),				// Dwarf
+						2 	=> array(1,6,8,11,12),		// Elf
+						3 	=> array(1,3,5,6,13),		// Human
+						4 	=> array(1,5,6,7,12),		// Kindred
+						5 	=> array(2),				// Stoneman
+						6 	=> array(3,6,9),			// Lycan
+						7 	=> array(10),				// Demon
 					),
 				),
 			),
 		);
 		
 		public $default_roles = array(
-			1	=> array(6),
-			2	=> array(1,2),
-			3	=> array(3,4,5,7),
-			4	=> array(8),
+			1	=> array(6, 7, 8, 12),					// healer
+			2	=> array(1, 2),							// tank
+			3	=> array(3, 4, 5, 7, 9, 10, 11, 12),	// damage
+			4	=> array(8, 13)							// support
 		);
 		
 		protected $class_colors = array(
@@ -85,6 +85,10 @@ if(!class_exists('fw')) {
 			7	=> '#ff0000',
 			8	=> '#159e00',
 			9	=> '#5845ff',
+			10	=> '#765100',
+			11	=> '#008812',
+			12	=> '#007a9f',
+			13	=> '#fd9900',
 		);
 
 		protected $glang		= array();

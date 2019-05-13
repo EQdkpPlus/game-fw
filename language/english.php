@@ -35,6 +35,9 @@ $english_array =  array(
 		8	=> 'Bard',
 		9	=> 'Soul Reaper',
 		10	=> 'Tormentor',
+		11	=> 'Ranger',
+		12	=> 'Warden',
+		13	=> 'Dragoon',
 	),
 
 	'races' => array(
